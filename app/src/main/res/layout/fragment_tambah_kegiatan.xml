@@ -10,20 +10,22 @@
 		android:padding="10dp"
 		android:layout_centerHorizontal="true"
 		android:layout_height="wrap_content"
-		android:layout_width="match_parent">
+		android:layout_width="match_parent"
+		android:layout_marginTop="@dimen/margin_normal">
 
 		<TextView
 			android:text="TAMBAH KEGIATAN"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:textSize="25sp"
+			android:textSize="@dimen/text_big"
 			android:textStyle="bold"/>
 
 		<TableLayout
 			android:layout_height="wrap_content"
 			android:layout_width="match_parent"
-			android:layout_marginTop="25dp"
-			android:layout_gravity="left">
+			android:layout_marginTop="@dimen/margin_normal"
+			android:layout_gravity="left"
+			android:gravity="center">
 
 			<TableRow
 				android:layout_height="wrap_content"
@@ -32,9 +34,9 @@
 
 				<TextView
 					android:layout_height="wrap_content"
-					android:textAppearance="?android:attr/textAppearanceSmall"
 					android:layout_width="wrap_content"
-					android:text="Nama Kegiatan"/>
+					android:text="Nama Kegiatan"
+					android:textSize="@dimen/text_medium"/>
 
 				<TextView
 					android:layout_height="wrap_content"
@@ -45,8 +47,8 @@
 				<EditText
 					android:layout_height="wrap_content"
 					android:layout_width="wrap_content"
-					android:ems="15"
-					android:id="@+id/tambah_kegitan_edt_nama"/>
+					android:id="@+id/tambah_kegitan_edt_nama"
+					android:textSize="@dimen/text_medium"/>
 
 			</TableRow>
 
@@ -59,7 +61,8 @@
 					android:layout_height="wrap_content"
 					android:textAppearance="?android:attr/textAppearanceSmall"
 					android:layout_width="wrap_content"
-					android:text="Deskripsi Kegiatan"/>
+					android:text="Deskripsi Kegiatan"
+					android:textSize="@dimen/text_medium"/>
 
 				<TextView
 					android:layout_height="wrap_content"
@@ -71,8 +74,8 @@
 					android:layout_height="wrap_content"
 					android:inputType="textMultiLine"
 					android:layout_width="wrap_content"
-					android:ems="15"
-					android:id="@+id/tambah_kegiatan_edt_deskripsi"/>
+					android:id="@+id/tambah_kegiatan_edt_deskripsi"
+					android:textSize="@dimen/text_medium"/>
 
 			</TableRow>
 
@@ -85,7 +88,8 @@
 					android:layout_height="wrap_content"
 					android:textAppearance="?android:attr/textAppearanceSmall"
 					android:layout_width="wrap_content"
-					android:text="Tanggal Kegiatan"/>
+					android:text="Tanggal Kegiatan"
+					android:textSize="@dimen/text_medium"/>
 
 				<TextView
 					android:layout_height="wrap_content"
@@ -97,8 +101,9 @@
 					android:layout_height="wrap_content"
 					android:inputType="textMultiLine"
 					android:layout_width="wrap_content"
-					android:ems="15"
-					android:visibility="invisible"/>
+					android:visibility="invisible"
+					android:ems="13"
+					android:textSize="@dimen/text_medium"/>
 
 			</TableRow>
 

@@ -7,25 +7,26 @@
 	<LinearLayout
 		android:orientation="vertical"
 		android:gravity="top|center"
-		android:padding="10dp"
+		android:padding="@dimen/padding_normal"
 		android:layout_centerHorizontal="true"
 		android:layout_height="wrap_content"
 		android:layout_width="match_parent"
-		android:layout_marginTop="30dp">
+		android:layout_marginTop="@dimen/margin_normal">
 
 		<TextView
 			android:text="PENDAFTARAN"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:textSize="25sp"
+			android:textSize="@dimen/text_big"
 			android:textStyle="bold"
 			android:id="@+id/pendaftaran_title"/>
 
 		<TableLayout
 			android:layout_height="wrap_content"
 			android:layout_width="match_parent"
-			android:layout_marginTop="25dp"
-			android:layout_gravity="left">
+			android:layout_marginTop="@dimen/margin_normal"
+			android:layout_gravity="left"
+			android:gravity="center">
 
 			<TableRow
 				android:layout_height="wrap_content"
@@ -34,9 +35,9 @@
 
 				<TextView
 					android:layout_height="wrap_content"
-					android:textAppearance="?android:attr/textAppearanceSmall"
 					android:layout_width="wrap_content"
-					android:text="NIK"/>
+					android:text="NIK"
+					android:textSize="@dimen/text_medium"/>
 
 				<TextView
 					android:layout_height="wrap_content"
@@ -47,9 +48,9 @@
 				<EditText
 					android:layout_height="wrap_content"
 					android:layout_width="wrap_content"
-					android:ems="15"
 					android:id="@+id/pendaftaran_nik"
-					android:inputType="number"/>
+					android:inputType="number"
+					android:textSize="@dimen/text_medium"/>
 
 			</TableRow>
 
@@ -62,7 +63,8 @@
 					android:layout_height="wrap_content"
 					android:textAppearance="?android:attr/textAppearanceSmall"
 					android:layout_width="wrap_content"
-					android:text="Nama"/>
+					android:text="Nama"
+					android:textSize="@dimen/text_medium"/>
 
 				<TextView
 					android:layout_height="wrap_content"
@@ -74,8 +76,8 @@
 					android:layout_height="wrap_content"
 					android:inputType="textMultiLine"
 					android:layout_width="wrap_content"
-					android:ems="15"
-					android:id="@+id/pendaftaran_nama"/>
+					android:id="@+id/pendaftaran_nama"
+					android:textSize="@dimen/text_medium"/>
 
 			</TableRow>
 
@@ -88,7 +90,8 @@
 					android:layout_height="wrap_content"
 					android:textAppearance="?android:attr/textAppearanceSmall"
 					android:layout_width="wrap_content"
-					android:text="Nama Suami"/>
+					android:text="Nama Suami"
+					android:textSize="@dimen/text_medium"/>
 
 				<TextView
 					android:layout_height="wrap_content"
@@ -100,8 +103,8 @@
 					android:layout_height="wrap_content"
 					android:inputType="textMultiLine"
 					android:layout_width="wrap_content"
-					android:ems="15"
-					android:id="@+id/pendaftaran_nama_suami"/>
+					android:id="@+id/pendaftaran_nama_suami"
+					android:textSize="@dimen/text_medium"/>
 
 			</TableRow>
 
@@ -114,7 +117,8 @@
 					android:layout_height="wrap_content"
 					android:textAppearance="?android:attr/textAppearanceSmall"
 					android:layout_width="wrap_content"
-					android:text="No. Telepon"/>
+					android:text="No. Telepon"
+					android:textSize="@dimen/text_medium"/>
 
 				<TextView
 					android:layout_height="wrap_content"
@@ -126,8 +130,8 @@
 					android:layout_height="wrap_content"
 					android:inputType="phone"
 					android:layout_width="wrap_content"
-					android:ems="15"
-					android:id="@+id/pendaftaran_notel"/>
+					android:id="@+id/pendaftaran_notel"
+					android:textSize="@dimen/text_medium"/>
 
 			</TableRow>
 
@@ -140,7 +144,8 @@
 					android:layout_height="wrap_content"
 					android:textAppearance="?android:attr/textAppearanceSmall"
 					android:layout_width="wrap_content"
-					android:text="Alamat"/>
+					android:text="Alamat"
+					android:textSize="@dimen/text_medium"/>
 
 				<TextView
 					android:layout_height="wrap_content"
@@ -152,8 +157,8 @@
 					android:layout_height="wrap_content"
 					android:inputType="textMultiLine"
 					android:layout_width="wrap_content"
-					android:ems="15"
-					android:id="@+id/pendaftaran_alamat"/>
+					android:id="@+id/pendaftaran_alamat"
+					android:textSize="@dimen/text_medium"/>
 
 			</TableRow>
 
@@ -166,7 +171,8 @@
 					android:layout_height="wrap_content"
 					android:textAppearance="?android:attr/textAppearanceSmall"
 					android:layout_width="wrap_content"
-					android:text="Status"/>
+					android:text="Status"
+					android:textSize="@dimen/text_medium"/>
 
 				<TextView
 					android:layout_height="wrap_content"
@@ -184,7 +190,7 @@
 						android:layout_height="wrap_content"
 						android:inputType="textMultiLine"
 						android:layout_width="wrap_content"
-						android:ems="15"
+						android:textSize="@dimen/text_medium"
 						android:visibility="gone"
 						android:id="@+id/pendaftaran_edt_status"/>
 
@@ -199,21 +205,22 @@
 							android:layout_width="wrap_content"
 							android:text="HAMIL"
 							android:checked="true"
-							android:id="@+id/pendaftaran_rb_hamil"/>
+							android:id="@+id/pendaftaran_rb_hamil"
+							android:textSize="@dimen/text_small"/>
 
 						<RadioButton
 							android:layout_height="wrap_content"
 							android:layout_width="wrap_content"
 							android:text="KB"
-							android:layout_marginLeft="10dp"
-							android:id="@+id/pendaftaran_rb_kb"/>
+							android:id="@+id/pendaftaran_rb_kb"
+							android:textSize="@dimen/text_small"/>
 
 						<RadioButton
 							android:layout_height="wrap_content"
 							android:layout_width="wrap_content"
 							android:text="BELUM DITENTUKAN"
-							android:layout_marginLeft="10dp"
-							android:id="@+id/pendaftaran_rb_belumditentukan"/>
+							android:id="@+id/pendaftaran_rb_belumditentukan"
+							android:textSize="@dimen/text_small"/>
 
 					</RadioGroup>
 
@@ -230,7 +237,8 @@
 					android:layout_height="wrap_content"
 					android:textAppearance="?android:attr/textAppearanceSmall"
 					android:layout_width="wrap_content"
-					android:text="Gol. Darah"/>
+					android:text="Gol. Darah"
+					android:textSize="@dimen/text_medium"/>
 
 				<TextView
 					android:layout_height="wrap_content"
@@ -248,7 +256,7 @@
 						android:layout_height="wrap_content"
 						android:inputType="textMultiLine"
 						android:layout_width="wrap_content"
-						android:ems="15"
+						android:textSize="@dimen/text_medium"
 						android:visibility="gone"
 						android:id="@+id/pendaftaran_edt_goldarah"/>
 
@@ -263,28 +271,32 @@
 							android:layout_width="wrap_content"
 							android:text="A"
 							android:checked="true"
-							android:id="@+id/pendaftaran_rb_a"/>
+							android:id="@+id/pendaftaran_rb_a"
+							android:textSize="@dimen/text_medium"/>
 
 						<RadioButton
 							android:layout_height="wrap_content"
 							android:layout_width="wrap_content"
 							android:text="B"
 							android:layout_marginLeft="10dp"
-							android:id="@+id/pendaftaran_rb_b"/>
+							android:id="@+id/pendaftaran_rb_b"
+							android:textSize="@dimen/text_medium"/>
 
 						<RadioButton
 							android:layout_height="wrap_content"
 							android:layout_width="wrap_content"
 							android:text="AB"
 							android:id="@+id/pendaftaran_rb_ab"
-							android:layout_marginLeft="10dp"/>
+							android:layout_marginLeft="10dp"
+							android:textSize="@dimen/text_medium"/>
 
 						<RadioButton
 							android:layout_height="wrap_content"
 							android:layout_width="wrap_content"
 							android:text="O"
 							android:layout_marginLeft="10dp"
-							android:id="@+id/pendaftaran_rb_o"/>
+							android:id="@+id/pendaftaran_rb_o"
+							android:textSize="@dimen/text_medium"/>
 
 					</RadioGroup>
 
@@ -299,9 +311,9 @@
 
 				<TextView
 					android:layout_height="wrap_content"
-					android:textAppearance="?android:attr/textAppearanceSmall"
 					android:layout_width="wrap_content"
-					android:text="Tgl. Lahir"/>
+					android:text="Tgl. Lahir"
+					android:textSize="@dimen/text_medium"/>
 
 				<TextView
 					android:layout_height="wrap_content"
@@ -320,7 +332,7 @@
 						android:layout_height="wrap_content"
 						android:inputType="textMultiLine"
 						android:layout_width="wrap_content"
-						android:ems="15"
+						android:textSize="@dimen/text_medium"
 						android:visibility="gone"
 						android:id="@+id/pendaftaran_edt_tanggal"/>
 
@@ -336,7 +348,8 @@
 							android:layout_width="wrap_content"
 							android:ems="3"
 							android:hint="Tgl"
-							android:id="@+id/pendaftaran_tanggal"/>
+							android:id="@+id/pendaftaran_tanggal"
+							android:textSize="@dimen/text_medium"/>
 
 						<TextView
 							android:layout_height="wrap_content"
@@ -350,7 +363,8 @@
 							android:layout_width="wrap_content"
 							android:ems="3"
 							android:hint="Bulan"
-							android:id="@+id/pendaftaran_bulan"/>
+							android:id="@+id/pendaftaran_bulan"
+							android:textSize="@dimen/text_medium"/>
 
 						<TextView
 							android:layout_height="wrap_content"
@@ -364,7 +378,8 @@
 							android:layout_width="wrap_content"
 							android:ems="3"
 							android:hint="Tahun"
-							android:id="@+id/pendaftaran_tahun"/>
+							android:id="@+id/pendaftaran_tahun"
+							android:textSize="@dimen/text_medium"/>
 
 					</LinearLayout>
 
@@ -380,9 +395,9 @@
 
 				<TextView
 					android:layout_height="wrap_content"
-					android:textAppearance="?android:attr/textAppearanceSmall"
 					android:layout_width="wrap_content"
-					android:text="Username"/>
+					android:text="Username"
+					android:textSize="@dimen/text_medium"/>
 
 				<TextView
 					android:layout_height="wrap_content"
@@ -394,8 +409,8 @@
 					android:layout_height="wrap_content"
 					android:inputType="text"
 					android:layout_width="wrap_content"
-					android:ems="15"
-					android:id="@+id/pendaftaran_username"/>
+					android:id="@+id/pendaftaran_username"
+					android:textSize="@dimen/text_medium"/>
 
 			</TableRow>
 
@@ -409,7 +424,8 @@
 					android:layout_height="wrap_content"
 					android:textAppearance="?android:attr/textAppearanceSmall"
 					android:layout_width="wrap_content"
-					android:text="Password"/>
+					android:text="Password"
+					android:textSize="@dimen/text_medium"/>
 
 				<TextView
 					android:layout_height="wrap_content"
@@ -421,8 +437,8 @@
 					android:layout_height="wrap_content"
 					android:inputType="textPassword"
 					android:layout_width="wrap_content"
-					android:ems="15"
-					android:id="@+id/pendaftaran_password"/>
+					android:id="@+id/pendaftaran_password"
+					android:textSize="@dimen/text_medium"/>
 
 			</TableRow>
 
@@ -436,7 +452,8 @@
 					android:layout_height="wrap_content"
 					android:textAppearance="?android:attr/textAppearanceSmall"
 					android:layout_width="wrap_content"
-					android:text="Re-Password"/>
+					android:text="Re-Password"
+					android:textSize="@dimen/text_medium"/>
 
 				<TextView
 					android:layout_height="wrap_content"
@@ -448,8 +465,8 @@
 					android:layout_height="wrap_content"
 					android:inputType="textPassword"
 					android:layout_width="wrap_content"
-					android:ems="15"
-					android:id="@+id/pendaftaran_repassword"/>
+					android:id="@+id/pendaftaran_repassword"
+					android:textSize="@dimen/text_medium"/>
 
 			</TableRow>
 
@@ -460,7 +477,7 @@
 			android:layout_width="match_parent"
 			android:text="DAFTAR"
 			android:id="@+id/pendaftaran_daftar"
-			android:layout_marginTop="20dp"/>
+			android:layout_marginTop="@dimen/margin_normal"/>
 
 		<Button
 			android:layout_height="wrap_content"

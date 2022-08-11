@@ -11,21 +11,22 @@
 		android:layout_centerHorizontal="true"
 		android:layout_height="wrap_content"
 		android:layout_width="match_parent"
-		android:layout_marginTop="30dp">
+		android:layout_marginTop="@dimen/margin_normal">
 
 		<TextView
 			android:text="TAMBAH KADER"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:textSize="25sp"
+			android:textSize="@dimen/text_big"
 			android:textStyle="bold"
 			android:id="@+id/tambah_kader_title"/>
 
 		<TableLayout
 			android:layout_height="wrap_content"
 			android:layout_width="match_parent"
-			android:layout_marginTop="25dp"
-			android:layout_gravity="left">
+			android:layout_marginTop="@dimen/margin_normal"
+			android:layout_gravity="left"
+			android:gravity="center">
 
 			<TableRow
 				android:layout_height="wrap_content"
@@ -36,7 +37,8 @@
 					android:layout_height="wrap_content"
 					android:textAppearance="?android:attr/textAppearanceSmall"
 					android:layout_width="wrap_content"
-					android:text="NIK"/>
+					android:text="NIK"
+					android:textSize="@dimen/text_medium"/>
 
 				<TextView
 					android:layout_height="wrap_content"
@@ -47,9 +49,9 @@
 				<EditText
 					android:layout_height="wrap_content"
 					android:layout_width="wrap_content"
-					android:ems="15"
 					android:id="@+id/tambah_kader_edt_nik"
-					android:inputType="number"/>
+					android:inputType="number"
+					android:textSize="@dimen/text_medium"/>
 
 			</TableRow>
 
@@ -60,9 +62,9 @@
 
 				<TextView
 					android:layout_height="wrap_content"
-					android:textAppearance="?android:attr/textAppearanceSmall"
 					android:layout_width="wrap_content"
-					android:text="Nama"/>
+					android:text="Nama"
+					android:textSize="@dimen/text_medium"/>
 
 				<TextView
 					android:layout_height="wrap_content"
@@ -74,8 +76,8 @@
 					android:layout_height="wrap_content"
 					android:inputType="textMultiLine"
 					android:layout_width="wrap_content"
-					android:ems="15"
-					android:id="@+id/tambah_kader_edt_nama"/>
+					android:id="@+id/tambah_kader_edt_nama"
+					android:textSize="@dimen/text_medium"/>
 
 			</TableRow>
 
@@ -86,9 +88,9 @@
 
 				<TextView
 					android:layout_height="wrap_content"
-					android:textAppearance="?android:attr/textAppearanceSmall"
 					android:layout_width="wrap_content"
-					android:text="No. Telepon"/>
+					android:text="No. Telepon"
+					android:textSize="@dimen/text_medium"/>
 
 				<TextView
 					android:layout_height="wrap_content"
@@ -100,8 +102,8 @@
 					android:layout_height="wrap_content"
 					android:inputType="phone"
 					android:layout_width="wrap_content"
-					android:ems="15"
-					android:id="@+id/tambah_kader_edt_notel"/>
+					android:id="@+id/tambah_kader_edt_notel"
+					android:textSize="@dimen/text_medium"/>
 
 			</TableRow>
 
@@ -112,9 +114,9 @@
 
 				<TextView
 					android:layout_height="wrap_content"
-					android:textAppearance="?android:attr/textAppearanceSmall"
 					android:layout_width="wrap_content"
-					android:text="Alamat"/>
+					android:text="Alamat"
+					android:textSize="@dimen/text_medium"/>
 
 				<TextView
 					android:layout_height="wrap_content"
@@ -126,8 +128,8 @@
 					android:layout_height="wrap_content"
 					android:inputType="textMultiLine"
 					android:layout_width="wrap_content"
-					android:ems="15"
-					android:id="@+id/tambah_kader_edt_alamat"/>
+					android:id="@+id/tambah_kader_edt_alamat"
+					android:textSize="@dimen/text_medium"/>
 
 			</TableRow>
 
@@ -138,9 +140,9 @@
 
 				<TextView
 					android:layout_height="wrap_content"
-					android:textAppearance="?android:attr/textAppearanceSmall"
 					android:layout_width="wrap_content"
-					android:text="Jenis Kelamin"/>
+					android:text="Jenis Kelamin"
+					android:textSize="@dimen/text_medium"/>
 
 				<TextView
 					android:layout_height="wrap_content"
@@ -158,7 +160,7 @@
 						android:layout_height="wrap_content"
 						android:inputType="textMultiLine"
 						android:layout_width="wrap_content"
-						android:ems="15"
+						android:textSize="@dimen/text_medium"
 						android:visibility="gone"
 						android:enabled="false"
 						android:id="@+id/tambah_kader_edt_jk"/>
@@ -174,14 +176,16 @@
 							android:layout_width="wrap_content"
 							android:text="LAKI-LAKI"
 							android:checked="true"
-							android:id="@+id/tambah_kader_radio_male"/>
+							android:id="@+id/tambah_kader_radio_male"
+							android:textSize="@dimen/text_medium"/>
 
 						<RadioButton
 							android:layout_height="wrap_content"
 							android:layout_width="wrap_content"
 							android:text="PEREMPUAN"
 							android:layout_marginLeft="10dp"
-							android:id="@+id/tambah_kader_radio_female"/>
+							android:id="@+id/tambah_kader_radio_female"
+							android:textSize="@dimen/text_medium"/>
 
 					</RadioGroup>
 
@@ -196,9 +200,9 @@
 
 				<TextView
 					android:layout_height="wrap_content"
-					android:textAppearance="?android:attr/textAppearanceSmall"
 					android:layout_width="wrap_content"
-					android:text="Status"/>
+					android:text="Status"
+					android:textSize="@dimen/text_medium"/>
 
 				<TextView
 					android:layout_height="wrap_content"
@@ -216,7 +220,7 @@
 						android:layout_height="wrap_content"
 						android:inputType="textMultiLine"
 						android:layout_width="wrap_content"
-						android:ems="15"
+						android:textSize="@dimen/text_medium"
 						android:visibility="gone"
 						android:enabled="false"
 						android:id="@+id/tambah_kader_edt_status"/>
@@ -232,14 +236,16 @@
 							android:layout_width="wrap_content"
 							android:text="AKTIF"
 							android:checked="true"
-							android:id="@+id/tambah_kader_radio_aktif"/>
+							android:id="@+id/tambah_kader_radio_aktif"
+							android:textSize="@dimen/text_medium"/>
 
 						<RadioButton
 							android:layout_height="wrap_content"
 							android:layout_width="wrap_content"
 							android:text="TIDAK AKTIF"
 							android:layout_marginLeft="10dp"
-							android:id="@+id/tambah_kader_radio_tidakaktif"/>
+							android:id="@+id/tambah_kader_radio_tidakaktif"
+							android:textSize="@dimen/text_medium"/>
 
 					</RadioGroup>
 
@@ -255,9 +261,9 @@
 
 				<TextView
 					android:layout_height="wrap_content"
-					android:textAppearance="?android:attr/textAppearanceSmall"
 					android:layout_width="wrap_content"
-					android:text="Username"/>
+					android:text="Username"
+					android:textSize="@dimen/text_medium"/>
 
 				<TextView
 					android:layout_height="wrap_content"
@@ -269,8 +275,8 @@
 					android:layout_height="wrap_content"
 					android:inputType="text"
 					android:layout_width="wrap_content"
-					android:ems="15"
-					android:id="@+id/tambah_kader_edt_username"/>
+					android:id="@+id/tambah_kader_edt_username"
+					android:textSize="@dimen/text_medium"/>
 
 			</TableRow>
 
@@ -282,9 +288,9 @@
 
 				<TextView
 					android:layout_height="wrap_content"
-					android:textAppearance="?android:attr/textAppearanceSmall"
 					android:layout_width="wrap_content"
-					android:text="Password"/>
+					android:text="Password"
+					android:textSize="@dimen/text_medium"/>
 
 				<TextView
 					android:layout_height="wrap_content"
@@ -296,8 +302,8 @@
 					android:layout_height="wrap_content"
 					android:inputType="textPassword"
 					android:layout_width="wrap_content"
-					android:ems="15"
-					android:id="@+id/tambah_kader_edt_password"/>
+					android:id="@+id/tambah_kader_edt_password"
+					android:textSize="@dimen/text_medium"/>
 
 			</TableRow>
 
@@ -309,9 +315,9 @@
 
 				<TextView
 					android:layout_height="wrap_content"
-					android:textAppearance="?android:attr/textAppearanceSmall"
 					android:layout_width="wrap_content"
-					android:text="Re-Password"/>
+					android:text="Re-Password"
+					android:textSize="@dimen/text_medium"/>
 
 				<TextView
 					android:layout_height="wrap_content"
@@ -323,8 +329,8 @@
 					android:layout_height="wrap_content"
 					android:inputType="textPassword"
 					android:layout_width="wrap_content"
-					android:ems="15"
-					android:id="@+id/tambah_kader_edt_repassword"/>
+					android:id="@+id/tambah_kader_edt_repassword"
+					android:textSize="@dimen/text_medium"/>
 
 			</TableRow>
 
@@ -335,7 +341,7 @@
 			android:layout_width="match_parent"
 			android:text="Tambah"
 			android:id="@+id/tambah_kader_btn_tambah"
-			android:layout_marginTop="20dp"/>
+			android:layout_marginTop="@dimen/margin_normal"/>
 
 	</LinearLayout>
 

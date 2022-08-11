@@ -21,7 +21,7 @@
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:gravity="center"
-			android:textSize="32dp"
+			android:textSize="@dimen/text_big"
 			android:text="Nama Riwayat"/>
 
 		<View
@@ -33,48 +33,48 @@
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:gravity="left"
-			android:textSize="20sp"/>
+			android:textSize="@dimen/text_normal"/>
 		<TextView
 			android:id="@+id/card_riwayat_nik"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:gravity="left"
-			android:textSize="20sp"/>
+			android:textSize="@dimen/text_normal"/>
 
 		<TextView
 			android:id="@+id/card_riwayat_metode_kb"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:gravity="left"
-			android:textSize="20sp"/>
+			android:textSize="@dimen/text_normal"/>
 		
 		<TextView
 			android:id="@+id/card_riwayat_komplikasi_kb"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:gravity="left"
-			android:textSize="20sp"/>
+			android:textSize="@dimen/text_normal"/>
 		
 		<TextView
 			android:id="@+id/card_riwayat_kegagalan_kb"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:gravity="left"
-			android:textSize="20sp"/>
+			android:textSize="@dimen/text_normal"/>
 		
 		<TextView
 			android:id="@+id/card_riwayat_hamil_ke"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:gravity="left"
-			android:textSize="20sp"/>
+			android:textSize="@dimen/text_normal"/>
 		
 		<TextView
 			android:id="@+id/card_riwayat_tanggal"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:gravity="left"
-			android:textSize="20sp"/>
+			android:textSize="@dimen/text_normal"/>
 
 		<LinearLayout
 			android:layout_height="wrap_content"

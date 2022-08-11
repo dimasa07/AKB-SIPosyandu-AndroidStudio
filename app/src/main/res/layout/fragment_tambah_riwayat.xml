@@ -11,21 +11,22 @@
 		android:layout_centerHorizontal="true"
 		android:layout_height="wrap_content"
 		android:layout_width="match_parent"
-		android:layout_marginTop="30dp">
+		android:layout_marginTop="@dimen/margin_normal">
 
 		<TextView
 			android:text="TAMBAH RIWAYAT"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:textSize="25sp"
+			android:textSize="@dimen/text_big"
 			android:textStyle="bold"
 			android:id="@+id/tambah_riwayat_title"/>
 
 		<TableLayout
 			android:layout_height="wrap_content"
 			android:layout_width="match_parent"
-			android:layout_marginTop="25dp"
-			android:layout_gravity="left">
+			android:layout_marginTop="@dimen/margin_normal"
+			android:layout_gravity="left"
+			android:gravity="center">
 
 			<TableRow
 				android:layout_height="wrap_content"
@@ -34,9 +35,9 @@
 
 				<TextView
 					android:layout_height="wrap_content"
-					android:textAppearance="?android:attr/textAppearanceSmall"
 					android:layout_width="wrap_content"
-					android:text="NIK"/>
+					android:text="NIK"
+					android:textSize="@dimen/text_medium"/>
 
 				<TextView
 					android:layout_height="wrap_content"
@@ -47,10 +48,10 @@
 				<EditText
 					android:layout_height="wrap_content"
 					android:layout_width="wrap_content"
-					android:ems="15"
 					android:enabled="false"
 					android:id="@+id/tambah_riwayat_edt_nik"
-					android:inputType="number"/>
+					android:inputType="number"
+					android:textSize="@dimen/text_medium"/>
 
 			</TableRow>
 
@@ -61,9 +62,9 @@
 
 				<TextView
 					android:layout_height="wrap_content"
-					android:textAppearance="?android:attr/textAppearanceSmall"
 					android:layout_width="wrap_content"
-					android:text="Nama"/>
+					android:text="Nama"
+					android:textSize="@dimen/text_medium"/>
 
 				<TextView
 					android:layout_height="wrap_content"
@@ -75,9 +76,9 @@
 					android:layout_height="wrap_content"
 					android:inputType="textMultiLine"
 					android:layout_width="wrap_content"
-					android:ems="15"
 					android:enabled="false"
-					android:id="@+id/tambah_riwayat_edt_nama"/>
+					android:id="@+id/tambah_riwayat_edt_nama"
+					android:textSize="@dimen/text_medium"/>
 
 			</TableRow>
 
@@ -88,9 +89,9 @@
 
 				<TextView
 					android:layout_height="wrap_content"
-					android:textAppearance="?android:attr/textAppearanceSmall"
 					android:layout_width="wrap_content"
-					android:text="Metode KB"/>
+					android:text="Metode KB"
+					android:textSize="@dimen/text_medium"/>
 
 				<TextView
 					android:layout_height="wrap_content"
@@ -102,8 +103,8 @@
 					android:layout_height="wrap_content"
 					android:inputType="text"
 					android:layout_width="wrap_content"
-					android:ems="15"
-					android:id="@+id/tambah_riwayat_edt_metode_kb"/>
+					android:id="@+id/tambah_riwayat_edt_metode_kb"
+					android:textSize="@dimen/text_medium"/>
 
 			</TableRow>
 
@@ -114,9 +115,9 @@
 
 				<TextView
 					android:layout_height="wrap_content"
-					android:textAppearance="?android:attr/textAppearanceSmall"
 					android:layout_width="wrap_content"
-					android:text="Komplikasi KB"/>
+					android:text="Komplikasi KB"
+					android:textSize="@dimen/text_medium"/>
 
 				<TextView
 					android:layout_height="wrap_content"
@@ -150,14 +151,16 @@
 							android:layout_width="wrap_content"
 							android:text="YA"
 							android:checked="true"
-							android:id="@+id/tambah_riwayat_rg_komplikasi_ya"/>
+							android:id="@+id/tambah_riwayat_rg_komplikasi_ya"
+							android:textSize="@dimen/text_medium"/>
 
 						<RadioButton
 							android:layout_height="wrap_content"
 							android:layout_width="wrap_content"
 							android:text="TIDAK"
 							android:layout_marginLeft="10dp"
-							android:id="@+id/tambah_riwayat_rg_komplikasi_tidak"/>
+							android:id="@+id/tambah_riwayat_rg_komplikasi_tidak"
+							android:textSize="@dimen/text_medium"/>
 
 					</RadioGroup>
 
@@ -172,9 +175,9 @@
 
 				<TextView
 					android:layout_height="wrap_content"
-					android:textAppearance="?android:attr/textAppearanceSmall"
 					android:layout_width="wrap_content"
-					android:text="Kegagalan KB"/>
+					android:text="Kegagalan KB"
+					android:textSize="@dimen/text_medium"/>
 
 				<TextView
 					android:layout_height="wrap_content"
@@ -208,14 +211,16 @@
 							android:layout_width="wrap_content"
 							android:text="YA"
 							android:checked="true"
-							android:id="@+id/tambah_riwayat_rg_kegagalan_ya"/>
+							android:id="@+id/tambah_riwayat_rg_kegagalan_ya"
+							android:textSize="@dimen/text_medium"/>
 
 						<RadioButton
 							android:layout_height="wrap_content"
 							android:layout_width="wrap_content"
 							android:text="TIDAK"
 							android:layout_marginLeft="10dp"
-							android:id="@+id/tambah_riwayat_rg_kegagalan_tidak"/>
+							android:id="@+id/tambah_riwayat_rg_kegagalan_tidak"
+							android:textSize="@dimen/text_medium"/>
 
 					</RadioGroup>
 
@@ -231,9 +236,9 @@
 
 				<TextView
 					android:layout_height="wrap_content"
-					android:textAppearance="?android:attr/textAppearanceSmall"
 					android:layout_width="wrap_content"
-					android:text="Hamil Ke"/>
+					android:text="Hamil Ke"
+					android:textSize="@dimen/text_medium"/>
 
 				<TextView
 					android:layout_height="wrap_content"
@@ -245,8 +250,8 @@
 					android:layout_height="wrap_content"
 					android:inputType="number"
 					android:layout_width="wrap_content"
-					android:ems="15"
-					android:id="@+id/tambah_riwayat_edt_hamil_ke"/>
+					android:id="@+id/tambah_riwayat_edt_hamil_ke"
+					android:textSize="@dimen/text_medium"/>
 
 			</TableRow>
 
@@ -257,9 +262,9 @@
 
 				<TextView
 					android:layout_height="wrap_content"
-					android:textAppearance="?android:attr/textAppearanceSmall"
 					android:layout_width="wrap_content"
-					android:text="Tanggal"/>
+					android:text="Tanggal"
+					android:textSize="@dimen/text_medium"/>
 
 				<TextView
 					android:layout_height="wrap_content"
@@ -293,7 +298,8 @@
 							android:layout_width="wrap_content"
 							android:ems="3"
 							android:hint="Tgl"
-							android:id="@+id/tambah_riwayat_edt_tanggal"/>
+							android:id="@+id/tambah_riwayat_edt_tanggal"
+							android:textSize="@dimen/text_medium"/>
 
 						<TextView
 							android:layout_height="wrap_content"
@@ -307,7 +313,8 @@
 							android:layout_width="wrap_content"
 							android:ems="3"
 							android:hint="Bulan"
-							android:id="@+id/tambah_riwayat_edt_bulan"/>
+							android:id="@+id/tambah_riwayat_edt_bulan"
+							android:textSize="@dimen/text_medium"/>
 
 						<TextView
 							android:layout_height="wrap_content"
@@ -321,7 +328,8 @@
 							android:layout_width="wrap_content"
 							android:ems="3"
 							android:hint="Tahun"
-							android:id="@+id/tambah_riwayat_edt_tahun"/>
+							android:id="@+id/tambah_riwayat_edt_tahun"
+							android:textSize="@dimen/text_medium"/>
 
 					</LinearLayout>
 
@@ -336,7 +344,7 @@
 			android:layout_width="match_parent"
 			android:text="Tambah"
 			android:id="@+id/tambah_riwayat_btn_tambah"
-			android:layout_marginTop="20dp"/>
+			android:layout_marginTop="@dimen/margin_normal"/>
 
 	</LinearLayout>
 

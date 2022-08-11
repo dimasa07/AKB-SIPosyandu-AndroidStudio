@@ -7,7 +7,7 @@
 	<LinearLayout
 		android:orientation="vertical"
 		android:gravity="center"
-		android:padding="50dp"
+		android:padding="20dp"
 		android:layout_centerHorizontal="true"
 		android:layout_height="match_parent"
 		android:layout_width="match_parent">
@@ -19,8 +19,9 @@
 
 		<TableLayout
 			android:layout_height="wrap_content"
-			android:layout_width="wrap_content"
-			android:layout_marginTop="50dp">
+			android:layout_width="match_parent"
+			android:layout_marginTop="50dp"
+			android:gravity="center">
 
 			<TableRow
 				android:layout_height="wrap_content"
@@ -29,9 +30,9 @@
 
 				<TextView
 					android:layout_height="wrap_content"
-					android:textAppearance="?android:attr/textAppearanceMedium"
 					android:layout_width="wrap_content"
-					android:text="Username"/>
+					android:text="Username"
+					android:textSize="@dimen/text_normal"/>
 
 				<TextView
 					android:layout_height="wrap_content"
@@ -42,8 +43,9 @@
 				<EditText
 					android:layout_height="wrap_content"
 					android:layout_width="wrap_content"
-					android:ems="10"
-					android:id="@+id/login_editText_username"/>
+					android:id="@+id/login_editText_username"
+					android:ems="8"
+					android:textSize="@dimen/text_normal"/>
 
 			</TableRow>
 
@@ -54,9 +56,9 @@
 
 				<TextView
 					android:layout_height="wrap_content"
-					android:textAppearance="?android:attr/textAppearanceMedium"
 					android:layout_width="wrap_content"
-					android:text="Password"/>
+					android:text="Password"
+					android:textSize="@dimen/text_normal"/>
 
 				<TextView
 					android:layout_height="wrap_content"
@@ -68,8 +70,9 @@
 					android:layout_height="wrap_content"
 					android:inputType="textPassword"
 					android:layout_width="wrap_content"
-					android:ems="10"
-					android:id="@+id/login_editText_password"/>
+					android:id="@+id/login_editText_password"
+					android:ems="8"
+					android:textSize="@dimen/text_normal"/>
 
 			</TableRow>
 
