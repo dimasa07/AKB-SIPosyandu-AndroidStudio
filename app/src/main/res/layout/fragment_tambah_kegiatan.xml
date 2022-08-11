@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:gravity="top|center"
+		android:padding="10dp"
+		android:layout_centerHorizontal="true"
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent">
+
+		<TextView
+			android:text="TAMBAH KEGIATAN"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="25sp"
+			android:textStyle="bold"/>
+
+		<TableLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:layout_marginTop="25dp"
+			android:layout_gravity="left">
+
+			<TableRow
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:gravity="center">
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:layout_width="wrap_content"
+					android:text="Nama Kegiatan"/>
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:layout_width="wrap_content"
+					android:text=" : "/>
+
+				<EditText
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:ems="15"
+					android:id="@+id/tambah_kegitan_edt_nama"/>
+
+			</TableRow>
+
+			<TableRow
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:gravity="center">
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:layout_width="wrap_content"
+					android:text="Deskripsi Kegiatan"/>
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:layout_width="wrap_content"
+					android:text=" : "/>
+
+				<EditText
+					android:layout_height="wrap_content"
+					android:inputType="textMultiLine"
+					android:layout_width="wrap_content"
+					android:ems="15"
+					android:id="@+id/tambah_kegiatan_edt_deskripsi"/>
+
+			</TableRow>
+
+			<TableRow
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:gravity="center">
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:layout_width="wrap_content"
+					android:text="Tanggal Kegiatan"/>
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:layout_width="wrap_content"
+					android:text=" : "/>
+
+				<EditText
+					android:layout_height="wrap_content"
+					android:inputType="textMultiLine"
+					android:layout_width="wrap_content"
+					android:ems="15"
+					android:visibility="invisible"/>
+
+			</TableRow>
+
+			<TableRow
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:gravity="center">
+
+				<DatePicker
+					android:layout_height="wrap_content"
+					android:layout_span="3"
+					android:layout_width="wrap_content"
+					android:id="@+id/tambah_kegiatan_date_picker"
+					android:layout_gravity="center"/>
+
+			</TableRow>
+
+		</TableLayout>
+
+		<Button
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:text="Tambah"
+			android:id="@+id/tambah_kegiatan_btn_tambah"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:orientation="vertical"
+		android:layout_alignParentBottom="true"
+		android:layout_alignParentRight="true"
+		android:layout_margin="20dp"
+		android:gravity="right">
+
+		<Button
+			style="?android:attr/buttonStyleSmall"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="KEMBALI"
+			android:id="@+id/tambah_kegiatan_btn_kembali"/>
+
+	</LinearLayout>
+
+</RelativeLayout>
+

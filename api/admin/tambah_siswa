@@ -1,0 +1,29 @@
+<?php
+if($_SERVER['REQUEST_METHOD']=='POST'){
+	
+	include "../connect.php";
+	
+	$id = $_POST['id_mahasiswa'];
+	$nama = $_POST['nama_mahasiswa'];
+	$nim = $_POST['nim_mahasiswa'];
+	$kelas = $_POST['kelas_mahasiswa'];
+	
+	$query = "INSERT INTO tbl_mahasiswa(nama_mahasiswa,nim_mahasiswa,kelas_mahasiswa) 
+	VALUES('$nama','$nim','$kelas')";
+	
+	$sql = mysqli_query($connect, $query);
+	$data = $nim." ".$nama." ".$kelas;
+	
+	if($sql){
+		 $response["value"] = 1;
+		 $response["message"] = "Sukses tambah data :".$data ;
+		 
+	}else{
+		 $response["value"] = 0;
+		 $response["message"] = "Gagal tambah data : ".$data;
+		  
+	}
+	echo json_encode($response); 
+}
+
+?>

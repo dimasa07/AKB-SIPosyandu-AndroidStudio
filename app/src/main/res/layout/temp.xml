@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical">
+
+		<TextView
+			android:id="@+id/card_kegiatan_nama"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:textSize="32dp"
+			android:text="Nama kegiatan"/>
+
+		<View
+			android:layout_width="match_parent"
+			android:layout_height="3dp"
+			android:background="#000000"/>
+
+		<TextView
+			android:id="@+id/card_kegiatan_deskripsi"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="left"
+			android:textSize="20sp"/>
+
+		<TextView
+			android:id="@+id/card_kegiatan_tanggal"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="left"
+			android:textSize="20sp"/>
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="horizontal"
+			android:gravity="right">
+
+			<Button
+				style="?android:attr/buttonStyleSmall"
+				android:layout_height="wrap_content"
+				android:layout_width="100dp"
+				android:text="Edit"
+				android:id="@+id/card_kegiatan_edit"/>
+
+			<Button
+				style="?android:attr/buttonStyleSmall"
+				android:layout_height="wrap_content"
+				android:layout_width="100dp"
+				android:text="Hapus"
+				android:id="@+id/card_kegiatan_hapus"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</LinearLayout>
+

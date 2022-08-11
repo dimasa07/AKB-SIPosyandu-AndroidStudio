@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	tools:showIn="navigation_view">
+	<item
+		android:title="PESERTA"
+		android:id="@+id/nav_menu_title"/>
+	<item
+		android:title="Menu">
+		<menu>
+			<group
+				android:checkableBehavior="single"
+				android:id="@+id/nav_menu_peserta">
+				<item
+					android:id="@+id/nav_peserta_profil"
+					android:icon="@mipmap/ic_launcher_round"
+					android:title="Profil" />
+				<item
+					android:id="@+id/nav_admin_kegiatan"
+					android:icon="@mipmap/ic_launcher_round"
+					android:title="Kegiatan" />
+				<item
+					android:id="@+id/nav_peserta_riwayat"
+					android:icon="@mipmap/ic_launcher_round"
+					android:title="Riwayat" />
+				<!--<item
+					android:id="@+id/nav_peserta_ibuHamil"
+					android:icon="@mipmap/ic_launcher_round"
+					android:title="Ibu Hamil" />
+				<item
+					android:id="@+id/nav_peserta_keluargaBerencana"
+					android:icon="@mipmap/ic_launcher_round"
+					android:title="Keluarga Berencana" />
+				<item
+					android:id="@+id/nav_peserta_giziAnak"
+					android:icon="@mipmap/ic_launcher_round"
+					android:title="Gizi Anak" />
+				<item
+					android:id="@+id/nav_peserta_imunisasi"
+					android:icon="@mipmap/ic_launcher_round"
+					android:title="Imunisasi" />-->
+			</group>
+		</menu>
+	</item>
+</menu>

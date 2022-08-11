@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:gravity="top|center"
+		android:padding="10dp"
+		android:layout_centerHorizontal="true"
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:layout_marginTop="30dp">
+
+		<TextView
+			android:text="TAMBAH KADER"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="25sp"
+			android:textStyle="bold"
+			android:id="@+id/tambah_kader_title"/>
+
+		<TableLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:layout_marginTop="25dp"
+			android:layout_gravity="left">
+
+			<TableRow
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:gravity="center">
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:layout_width="wrap_content"
+					android:text="NIK"/>
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:layout_width="wrap_content"
+					android:text=" : "/>
+
+				<EditText
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:ems="15"
+					android:id="@+id/tambah_kader_edt_nik"
+					android:inputType="number"/>
+
+			</TableRow>
+
+			<TableRow
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:gravity="center">
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:layout_width="wrap_content"
+					android:text="Nama"/>
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:layout_width="wrap_content"
+					android:text=" : "/>
+
+				<EditText
+					android:layout_height="wrap_content"
+					android:inputType="textMultiLine"
+					android:layout_width="wrap_content"
+					android:ems="15"
+					android:id="@+id/tambah_kader_edt_nama"/>
+
+			</TableRow>
+
+			<TableRow
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:gravity="center">
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:layout_width="wrap_content"
+					android:text="No. Telepon"/>
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:layout_width="wrap_content"
+					android:text=" : "/>
+
+				<EditText
+					android:layout_height="wrap_content"
+					android:inputType="phone"
+					android:layout_width="wrap_content"
+					android:ems="15"
+					android:id="@+id/tambah_kader_edt_notel"/>
+
+			</TableRow>
+
+			<TableRow
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:gravity="center">
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:layout_width="wrap_content"
+					android:text="Alamat"/>
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:layout_width="wrap_content"
+					android:text=" : "/>
+
+				<EditText
+					android:layout_height="wrap_content"
+					android:inputType="textMultiLine"
+					android:layout_width="wrap_content"
+					android:ems="15"
+					android:id="@+id/tambah_kader_edt_alamat"/>
+
+			</TableRow>
+
+			<TableRow
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:gravity="center">
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:layout_width="wrap_content"
+					android:text="Jenis Kelamin"/>
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:layout_width="wrap_content"
+					android:text=" : "/>
+
+				<LinearLayout
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:orientation="horizontal"
+					android:padding="5dp">
+
+					<EditText
+						android:layout_height="wrap_content"
+						android:inputType="textMultiLine"
+						android:layout_width="wrap_content"
+						android:ems="15"
+						android:visibility="gone"
+						android:enabled="false"
+						android:id="@+id/tambah_kader_edt_jk"/>
+
+					<RadioGroup
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:id="@+id/tambah_kader_radio_jk"
+						android:orientation="horizontal">
+
+						<RadioButton
+							android:layout_height="wrap_content"
+							android:layout_width="wrap_content"
+							android:text="LAKI-LAKI"
+							android:checked="true"
+							android:id="@+id/tambah_kader_radio_male"/>
+
+						<RadioButton
+							android:layout_height="wrap_content"
+							android:layout_width="wrap_content"
+							android:text="PEREMPUAN"
+							android:layout_marginLeft="10dp"
+							android:id="@+id/tambah_kader_radio_female"/>
+
+					</RadioGroup>
+
+				</LinearLayout>
+
+			</TableRow>
+
+			<TableRow
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:gravity="center">
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:layout_width="wrap_content"
+					android:text="Status"/>
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:layout_width="wrap_content"
+					android:text=" : "/>
+
+				<LinearLayout
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:orientation="horizontal"
+					android:padding="5dp">
+
+					<EditText
+						android:layout_height="wrap_content"
+						android:inputType="textMultiLine"
+						android:layout_width="wrap_content"
+						android:ems="15"
+						android:visibility="gone"
+						android:enabled="false"
+						android:id="@+id/tambah_kader_edt_status"/>
+
+					<RadioGroup
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:id="@+id/tambah_kader_radio_status"
+						android:orientation="horizontal">
+
+						<RadioButton
+							android:layout_height="wrap_content"
+							android:layout_width="wrap_content"
+							android:text="AKTIF"
+							android:checked="true"
+							android:id="@+id/tambah_kader_radio_aktif"/>
+
+						<RadioButton
+							android:layout_height="wrap_content"
+							android:layout_width="wrap_content"
+							android:text="TIDAK AKTIF"
+							android:layout_marginLeft="10dp"
+							android:id="@+id/tambah_kader_radio_tidakaktif"/>
+
+					</RadioGroup>
+
+				</LinearLayout>
+
+			</TableRow>
+
+			<TableRow
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:id="@+id/tambah_kader_row_username"
+				android:gravity="center">
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:layout_width="wrap_content"
+					android:text="Username"/>
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:text=" : "
+					android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+				<EditText
+					android:layout_height="wrap_content"
+					android:inputType="text"
+					android:layout_width="wrap_content"
+					android:ems="15"
+					android:id="@+id/tambah_kader_edt_username"/>
+
+			</TableRow>
+
+			<TableRow
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:id="@+id/tambah_kader_row_password"
+				android:gravity="center">
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:layout_width="wrap_content"
+					android:text="Password"/>
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:layout_width="wrap_content"
+					android:text=" : "/>
+
+				<EditText
+					android:layout_height="wrap_content"
+					android:inputType="textPassword"
+					android:layout_width="wrap_content"
+					android:ems="15"
+					android:id="@+id/tambah_kader_edt_password"/>
+
+			</TableRow>
+
+			<TableRow
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:id="@+id/tambah_kader_row_repassword"
+				android:gravity="center">
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:layout_width="wrap_content"
+					android:text="Re-Password"/>
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:layout_width="wrap_content"
+					android:text=" : "/>
+
+				<EditText
+					android:layout_height="wrap_content"
+					android:inputType="textPassword"
+					android:layout_width="wrap_content"
+					android:ems="15"
+					android:id="@+id/tambah_kader_edt_repassword"/>
+
+			</TableRow>
+
+		</TableLayout>
+
+		<Button
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:text="Tambah"
+			android:id="@+id/tambah_kader_btn_tambah"
+			android:layout_marginTop="20dp"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:orientation="vertical"
+		android:layout_alignParentBottom="true"
+		android:layout_alignParentRight="true"
+		android:layout_margin="20dp"
+		android:gravity="right">
+
+		<Button
+			style="?android:attr/buttonStyleSmall"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="KEMBALI"
+			android:id="@+id/tambah_kader_btn_kembali"/>
+
+	</LinearLayout>
+
+</RelativeLayout>
+

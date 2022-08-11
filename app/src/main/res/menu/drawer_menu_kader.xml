@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	tools:showIn="navigation_view">
+	<item
+		android:title="KADER"
+		android:id="@+id/nav_menu_title"/>
+	<item
+		android:title="Menu">
+		<menu>
+			<group
+				android:checkableBehavior="single"
+				android:id="@+id/nav_menu_kader">
+				<item
+					android:id="@+id/nav_kader_profil"
+					android:icon="@mipmap/ic_launcher_round"
+					android:title="Profil" />
+				<item
+					android:id="@+id/nav_admin_dataPerserta"
+					android:icon="@mipmap/ic_launcher_round"
+					android:title="Data Peserta" />
+				<item
+					android:id="@+id/nav_admin_kegiatan"
+					android:icon="@mipmap/ic_launcher_round"
+					android:title="Kegiatan" />
+			</group>
+		</menu>
+	</item>
+</menu>

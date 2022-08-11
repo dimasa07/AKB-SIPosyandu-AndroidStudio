@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.akb.siposyandu" >
+	<uses-permission android:name="android.permission.INTERNET" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_posyandu"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+		android:resizeableActivity = "true">
+        <activity
+            android:name=".SplashScreen"
+					android:theme="@style/SplashTheme"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+				<activity
+					android:name=".activities.LoginActivity"
+					android:theme="@style/AppTheme"/>
+			<activity
+				android:name=".activities.PendaftaranActivity"
+				android:theme="@style/AppTheme"/>
+			<activity
+				android:name=".activities.BerandaActivity"
+				android:theme="@style/AppTheme"/>
+			<activity
+				android:name=".activities.PengaturanActivity"
+				android:theme="@style/AppTheme"/>
+    </application>
+
+</manifest>

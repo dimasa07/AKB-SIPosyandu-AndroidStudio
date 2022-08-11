@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:gravity="top|center"
+		android:padding="10dp"
+		android:layout_centerHorizontal="true"
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:layout_marginTop="30dp">
+
+		<TextView
+			android:text="PENDAFTARAN"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="25sp"
+			android:textStyle="bold"
+			android:id="@+id/pendaftaran_title"/>
+
+		<TableLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:layout_marginTop="25dp"
+			android:layout_gravity="left">
+
+			<TableRow
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:gravity="center">
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:layout_width="wrap_content"
+					android:text="NIK"/>
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:layout_width="wrap_content"
+					android:text=" : "/>
+
+				<EditText
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:ems="15"
+					android:id="@+id/pendaftaran_nik"
+					android:inputType="number"/>
+
+			</TableRow>
+
+			<TableRow
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:gravity="center">
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:layout_width="wrap_content"
+					android:text="Nama"/>
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:layout_width="wrap_content"
+					android:text=" : "/>
+
+				<EditText
+					android:layout_height="wrap_content"
+					android:inputType="textMultiLine"
+					android:layout_width="wrap_content"
+					android:ems="15"
+					android:id="@+id/pendaftaran_nama"/>
+
+			</TableRow>
+
+			<TableRow
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:gravity="center">
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:layout_width="wrap_content"
+					android:text="Nama Suami"/>
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:layout_width="wrap_content"
+					android:text=" : "/>
+
+				<EditText
+					android:layout_height="wrap_content"
+					android:inputType="textMultiLine"
+					android:layout_width="wrap_content"
+					android:ems="15"
+					android:id="@+id/pendaftaran_nama_suami"/>
+
+			</TableRow>
+
+			<TableRow
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:gravity="center">
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:layout_width="wrap_content"
+					android:text="No. Telepon"/>
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:layout_width="wrap_content"
+					android:text=" : "/>
+
+				<EditText
+					android:layout_height="wrap_content"
+					android:inputType="phone"
+					android:layout_width="wrap_content"
+					android:ems="15"
+					android:id="@+id/pendaftaran_notel"/>
+
+			</TableRow>
+
+			<TableRow
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:gravity="center">
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:layout_width="wrap_content"
+					android:text="Alamat"/>
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:layout_width="wrap_content"
+					android:text=" : "/>
+
+				<EditText
+					android:layout_height="wrap_content"
+					android:inputType="textMultiLine"
+					android:layout_width="wrap_content"
+					android:ems="15"
+					android:id="@+id/pendaftaran_alamat"/>
+
+			</TableRow>
+
+			<TableRow
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:gravity="center">
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:layout_width="wrap_content"
+					android:text="Status"/>
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:layout_width="wrap_content"
+					android:text=" : "/>
+
+				<LinearLayout
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:orientation="horizontal"
+					android:padding="5dp">
+
+					<EditText
+						android:layout_height="wrap_content"
+						android:inputType="textMultiLine"
+						android:layout_width="wrap_content"
+						android:ems="15"
+						android:visibility="gone"
+						android:id="@+id/pendaftaran_edt_status"/>
+
+					<RadioGroup
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:id="@+id/pendaftaran_rg_status"
+						android:orientation="horizontal">
+
+						<RadioButton
+							android:layout_height="wrap_content"
+							android:layout_width="wrap_content"
+							android:text="HAMIL"
+							android:checked="true"
+							android:id="@+id/pendaftaran_rb_hamil"/>
+
+						<RadioButton
+							android:layout_height="wrap_content"
+							android:layout_width="wrap_content"
+							android:text="KB"
+							android:layout_marginLeft="10dp"
+							android:id="@+id/pendaftaran_rb_kb"/>
+
+						<RadioButton
+							android:layout_height="wrap_content"
+							android:layout_width="wrap_content"
+							android:text="BELUM DITENTUKAN"
+							android:layout_marginLeft="10dp"
+							android:id="@+id/pendaftaran_rb_belumditentukan"/>
+
+					</RadioGroup>
+
+				</LinearLayout>
+
+			</TableRow>
+
+			<TableRow
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:gravity="center">
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:layout_width="wrap_content"
+					android:text="Gol. Darah"/>
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:layout_width="wrap_content"
+					android:text=" : "/>
+
+				<LinearLayout
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:orientation="horizontal"
+					android:padding="5dp">
+
+					<EditText
+						android:layout_height="wrap_content"
+						android:inputType="textMultiLine"
+						android:layout_width="wrap_content"
+						android:ems="15"
+						android:visibility="gone"
+						android:id="@+id/pendaftaran_edt_goldarah"/>
+
+					<RadioGroup
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:id="@+id/pendaftaran_rg_goldarah"
+						android:orientation="horizontal">
+
+						<RadioButton
+							android:layout_height="wrap_content"
+							android:layout_width="wrap_content"
+							android:text="A"
+							android:checked="true"
+							android:id="@+id/pendaftaran_rb_a"/>
+
+						<RadioButton
+							android:layout_height="wrap_content"
+							android:layout_width="wrap_content"
+							android:text="B"
+							android:layout_marginLeft="10dp"
+							android:id="@+id/pendaftaran_rb_b"/>
+
+						<RadioButton
+							android:layout_height="wrap_content"
+							android:layout_width="wrap_content"
+							android:text="AB"
+							android:id="@+id/pendaftaran_rb_ab"
+							android:layout_marginLeft="10dp"/>
+
+						<RadioButton
+							android:layout_height="wrap_content"
+							android:layout_width="wrap_content"
+							android:text="O"
+							android:layout_marginLeft="10dp"
+							android:id="@+id/pendaftaran_rb_o"/>
+
+					</RadioGroup>
+
+				</LinearLayout>
+
+			</TableRow>
+
+			<TableRow
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:gravity="center">
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:layout_width="wrap_content"
+					android:text="Tgl. Lahir"/>
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:layout_width="wrap_content"
+					android:text=" : "/>
+
+				<LinearLayout
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:orientation="horizontal"
+					android:padding="5dp"
+					android:gravity="left|center">
+
+					<EditText
+						android:layout_height="wrap_content"
+						android:inputType="textMultiLine"
+						android:layout_width="wrap_content"
+						android:ems="15"
+						android:visibility="gone"
+						android:id="@+id/pendaftaran_edt_tanggal"/>
+
+					<LinearLayout
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:orientation="horizontal"
+						android:id="@+id/pendaftaran_lay_tanggal">
+
+						<EditText
+							android:layout_height="wrap_content"
+							android:inputType="number"
+							android:layout_width="wrap_content"
+							android:ems="3"
+							android:hint="Tgl"
+							android:id="@+id/pendaftaran_tanggal"/>
+
+						<TextView
+							android:layout_height="wrap_content"
+							android:textAppearance="?android:attr/textAppearanceMedium"
+							android:layout_width="wrap_content"
+							android:text="/"/>
+
+						<EditText
+							android:layout_height="wrap_content"
+							android:inputType="number"
+							android:layout_width="wrap_content"
+							android:ems="3"
+							android:hint="Bulan"
+							android:id="@+id/pendaftaran_bulan"/>
+
+						<TextView
+							android:layout_height="wrap_content"
+							android:textAppearance="?android:attr/textAppearanceMedium"
+							android:layout_width="wrap_content"
+							android:text="/"/>
+
+						<EditText
+							android:layout_height="wrap_content"
+							android:inputType="number"
+							android:layout_width="wrap_content"
+							android:ems="3"
+							android:hint="Tahun"
+							android:id="@+id/pendaftaran_tahun"/>
+
+					</LinearLayout>
+
+				</LinearLayout>
+
+			</TableRow>
+
+			<TableRow
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:id="@+id/pendaftaran_row_username"
+				android:gravity="center">
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:layout_width="wrap_content"
+					android:text="Username"/>
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:text=" : "
+					android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+				<EditText
+					android:layout_height="wrap_content"
+					android:inputType="text"
+					android:layout_width="wrap_content"
+					android:ems="15"
+					android:id="@+id/pendaftaran_username"/>
+
+			</TableRow>
+
+			<TableRow
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:id="@+id/pendaftaran_row_password"
+				android:gravity="center">
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:layout_width="wrap_content"
+					android:text="Password"/>
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:layout_width="wrap_content"
+					android:text=" : "/>
+
+				<EditText
+					android:layout_height="wrap_content"
+					android:inputType="textPassword"
+					android:layout_width="wrap_content"
+					android:ems="15"
+					android:id="@+id/pendaftaran_password"/>
+
+			</TableRow>
+
+			<TableRow
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:id="@+id/pendaftaran_row_repassword"
+				android:gravity="center">
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:layout_width="wrap_content"
+					android:text="Re-Password"/>
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:layout_width="wrap_content"
+					android:text=" : "/>
+
+				<EditText
+					android:layout_height="wrap_content"
+					android:inputType="textPassword"
+					android:layout_width="wrap_content"
+					android:ems="15"
+					android:id="@+id/pendaftaran_repassword"/>
+
+			</TableRow>
+
+		</TableLayout>
+
+		<Button
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:text="DAFTAR"
+			android:id="@+id/pendaftaran_daftar"
+			android:layout_marginTop="20dp"/>
+
+		<Button
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:text="RIWAYAT"
+			android:id="@+id/pendaftaran_riwayat"
+			android:layout_marginTop="20dp"
+			android:visibility="gone"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:orientation="vertical"
+		android:layout_alignParentBottom="true"
+		android:layout_alignParentRight="true"
+		android:layout_margin="20dp"
+		android:gravity="right">
+
+		<Button
+			style="?android:attr/buttonStyleSmall"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="KEMBALI"
+			android:id="@+id/pendaftaran_kembali"/>
+
+	</LinearLayout>
+
+</RelativeLayout>
+

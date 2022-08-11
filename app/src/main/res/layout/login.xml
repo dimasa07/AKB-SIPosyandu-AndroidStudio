@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:gravity="center"
+		android:padding="50dp"
+		android:layout_centerHorizontal="true"
+		android:layout_height="match_parent"
+		android:layout_width="match_parent">
+
+		<ImageView
+			android:src="@drawable/logo_posyandu"
+			android:layout_width="100dp"
+			android:layout_height="100dp"/>
+
+		<TableLayout
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:layout_marginTop="50dp">
+
+			<TableRow
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:gravity="center">
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:layout_width="wrap_content"
+					android:text="Username"/>
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:layout_width="wrap_content"
+					android:text=" : "/>
+
+				<EditText
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:ems="10"
+					android:id="@+id/login_editText_username"/>
+
+			</TableRow>
+
+			<TableRow
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:gravity="center">
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:layout_width="wrap_content"
+					android:text="Password"/>
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:layout_width="wrap_content"
+					android:text=" : "/>
+
+				<EditText
+					android:layout_height="wrap_content"
+					android:inputType="textPassword"
+					android:layout_width="wrap_content"
+					android:ems="10"
+					android:id="@+id/login_editText_password"/>
+
+			</TableRow>
+
+		</TableLayout>
+
+		<Button
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:text="LOGIN"
+			android:layout_marginTop="50dp"
+			android:id="@+id/login_button_login"/>
+
+		<Button
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:text="PENDAFTARAN"
+			android:layout_marginTop="10dp"
+			android:id="@+id/login_button_pendaftaran"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:orientation="vertical"
+		android:layout_alignParentBottom="true"
+		android:layout_alignParentRight="true"
+		android:layout_margin="10dp"
+		android:gravity="right"
+		android:visibility="gone">
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="Login Sebagai :"/>
+
+		<Button
+			style="?android:attr/buttonStyleSmall"
+			android:layout_height="40dp"
+			android:layout_width="100dp"
+			android:text="Admin"
+			android:textSize="10sp"/>
+
+		<Button
+			style="?android:attr/buttonStyleSmall"
+			android:layout_height="40dp"
+			android:layout_width="100dp"
+			android:text="Kader"
+			android:textSize="10sp"/>
+
+	</LinearLayout>
+
+</RelativeLayout>
+

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:card_view="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	card_view:cardCornerRadius="6dp"
+	card_view:cardElevation="3dp"
+	card_view:cardUseCompatPadding="true"
+	android:id="@+id/card_riwayat">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:padding="10dp">
+
+		<TextView
+			android:id="@+id/card_riwayat_title"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:textSize="32dp"
+			android:text="Nama Riwayat"/>
+
+		<View
+			android:layout_width="match_parent"
+			android:layout_height="1dp"
+			android:background="#000000"/>
+		<TextView
+			android:id="@+id/card_riwayat_nama"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="left"
+			android:textSize="20sp"/>
+		<TextView
+			android:id="@+id/card_riwayat_nik"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="left"
+			android:textSize="20sp"/>
+
+		<TextView
+			android:id="@+id/card_riwayat_metode_kb"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="left"
+			android:textSize="20sp"/>
+		
+		<TextView
+			android:id="@+id/card_riwayat_komplikasi_kb"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="left"
+			android:textSize="20sp"/>
+		
+		<TextView
+			android:id="@+id/card_riwayat_kegagalan_kb"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="left"
+			android:textSize="20sp"/>
+		
+		<TextView
+			android:id="@+id/card_riwayat_hamil_ke"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="left"
+			android:textSize="20sp"/>
+		
+		<TextView
+			android:id="@+id/card_riwayat_tanggal"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="left"
+			android:textSize="20sp"/>
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="horizontal"
+			android:gravity="right">
+
+
+			<Button
+				style="?android:attr/buttonStyleSmall"
+				android:layout_height="wrap_content"
+				android:layout_width="100dp"
+				android:text="Hapus"
+				android:id="@+id/card_riwayat_hapus"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</android.support.v7.widget.CardView>
+
+

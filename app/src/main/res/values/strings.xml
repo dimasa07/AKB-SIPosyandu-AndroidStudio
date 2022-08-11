@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SIPosyandu</string>
+    <string name="hello_world">Hello world!</string>
+		<string name="title_activity_kategori">Toko Online</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">SIP</string>
+    <string name="nav_header_subtitle">Sistem Informasi Posyandu</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="content_desc">Your Image</string>
+    <string name="noKategori">Semua Kategori</string>
+    <string name="deskripsi">Deskripsi</string>
+    <string name="kategori">Kategori</string>
+    <string name="cari_hint">Mau belanja apa?</string>
+		<string name="search_btn_title">Mau belanja apa?</string>
+</resources>
